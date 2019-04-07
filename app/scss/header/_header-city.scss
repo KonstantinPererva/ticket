@@ -1,0 +1,40 @@
+.header-city {
+  flex: 0 0 auto;
+  margin: 0 0 0 45px;
+  display: flex;
+  align-items: center;
+  color: $green;
+  transition: .15s;
+
+  &:hover {
+    @media (hover: hover) {
+      cursor: pointer;
+      color: $link-hover;
+    }
+
+    & .header-city__ico {
+      & path {
+        fill: $link-hover;
+      }
+    }
+  }
+
+  &__ico {
+    flex: 0 0 auto;
+    display: block;
+    position: relative;
+    top: -3px;
+
+    & path {
+      fill: $green;
+      transition: .15s;
+    }
+  }
+
+  &__text {
+    flex: 0 0 auto;
+    display: block;
+    font-size: 24px;
+    margin: 0 0 0 5px;
+  }
+}

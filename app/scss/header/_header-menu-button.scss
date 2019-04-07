@@ -1,0 +1,18 @@
+.header-menu-button {
+  flex: 0 0 auto;
+  display: block;
+
+  &:hover {
+    @media (hover: hover) {
+      cursor: pointer;
+    }
+  }
+
+  &__ico {
+    display: block;
+
+    & rect {
+      fill: $green;
+    }
+  }
+}

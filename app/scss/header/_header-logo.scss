@@ -1,0 +1,13 @@
+.header-logo {
+  flex: 0 0 auto;
+  display: block;
+  margin: 0 0 0 51px;
+
+  &__ico {
+    display: block;
+
+    & path {
+      fill: $green;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.header-search-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+  transition: .15s;
+
+  &:hover {
+    @media (hover: hover) {
+      cursor: pointer;
+
+      & .header-search-button__ico {
+        & path {
+          stroke: $link-hover;
+        }
+
+        & rect {
+          fill: $link-hover;
+        }
+      }
+    }
+  }
+
+  &__ico {
+    display: block;
+
+    & path {
+      stroke: $green;
+      transition: .15s;
+    }
+
+    & rect {
+      fill: $green;
+      transition: .15s;
+    }
+  }
+}

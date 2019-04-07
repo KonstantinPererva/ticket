@@ -1,0 +1,50 @@
+.header-search-field {
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  width: 0;
+  transition: .2s;
+
+  &.active {
+    width: 448px;
+    & .header-search-field__inner {
+      opacity: 1;
+    }
+  }
+
+  &__inner {
+    opacity: 0;
+    transition: .2s;
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    height: 32px;
+    background: #fff;
+    font-size: 14px;
+    padding: 0 40px 0 62px;
+    border: 0;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__ico {
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+    & path {
+      stroke: $green;
+    }
+
+    & rect {
+      fill: $green;
+    }
+  }
+}
